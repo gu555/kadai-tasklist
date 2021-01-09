@@ -4,12 +4,29 @@
     <title>Tasklist</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
+    <!--bootstap使用のため追加-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!--bootstap使用のため追加-->
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <!--bootstap使用のため追加-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <!--bootstap使用のため追加-->
+    
   </head>
 
   <body>
+    
+    <!--ナビバー追加-->
+    <%= render 'layouts/navbar' %>
+    <!--ナビバー追加-->
+    
     <div class="container">
       <%= render 'layouts/flash_messages' %>
 
